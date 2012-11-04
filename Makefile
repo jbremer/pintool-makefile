@@ -1,7 +1,8 @@
 
 PINTOOL = ..\pintool
+DLLS = tz.dll
 
-default: tz.dll
+default: $(DLLS)
 
 %.obj: %.cpp
 	cl /c /MT /EHs- /EHa- /wd4530 /DTARGET_WINDOWS /DBIGARRAY_MULTIPLIER=1 \
